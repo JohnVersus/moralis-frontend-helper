@@ -104,9 +104,56 @@
     ```
 
 - [`AddLoginButton()`](#AddLoginButton)
+  - **`Adds a Metamask login button element into the page`**
+  - `The below code adds an button element into the document with element id = LoginBtn, inside parent element of id = Body, with height = 15px and width = 50px and Background color = #65a47b . **And can be used to login into metamask wallet.**`
+ 
+    ```
+    options = {
+    TagID:"LoginBtn", ParentId:"Body", Style:"min-width: 50px; min-height: 15px; background-color: #65a47b;"
+    }
+    AddLoginButton(options)
+    ```
+
 - [`AddWCLoginButton()`](#AddWCLoginButton)
+  - **`Adds a Wallet Connect login button element into the page`**
+  - `The below code adds an button element into the document with element id = LoginBtn, inside parent element of id = Body, with height = 15px and width = 50px and Background color = #65a47b . **And can be used to login into crypto wallets using Wallet Connect funtions.**`
+ 
+    ```
+    options = {
+    TagID:"LoginBtn", ParentId:"Body", Style:"min-width: 50px; min-height: 15px; background-color: #65a47b;"
+    }
+    AddLoginButton(options)
+    ```
+
 - [`AddButton()`](#AddButton)
+  - **`Adds a button element with moralis web3api functions into the page`**
+  - `The below code adds an button element into the document with element id = Button1, inside parent element of id = Body, with button onclick function as to get token price which takes input from the UI element = Intext1 and sends output into an UI element Text1 with height = 15px and width = 50px and Background color = #65a47b . **And can be used to login into crypto wallets using Wallet Connect funtions.**`
+ 
+    ```
+    options = {
+    TagID:"Button1", ParentId:"Body", ButtonName:"ClickMe", ButtonFunction:"TokenPrice", FunctionInput:"InText1", FunctionOutput:"Text1", Style:"min-width: 50px; min-height: 15px; background-color: #65a47b;"
+    }
+    AddButton(options)
+    ```
+    Accepted Button Function
+    - Login `Requies no input elememt, requires output text element to store user address`
+    - Logout `Requies no input elememt, requires no output element`
+    - Balance `Requies input element with wallet address, requires output table element with two columns ["Address", "Balances"]`
+    - Transaction `Requies input element with wallet address, requires output table element with five columns ["Chanin", "From Address", "To Address", "Value", "Transaction Date"]`
+    - NFT `Requies input element with text element to search  for NFT, requires output div element to store search output`
+    - TokenPrice `Requies input element with token contract address, requires output text element to show price`
+
 - [`AddInputTextBox()`](#AddInputTextBox)
+  - **`Adds a UI input text element to the page`**
+  - `The below code creates a input text element in document with element id = InText, inside parent element of id = Body, with Placeholder value = Enter Text, text color = #000000 .`
+ 
+    ```
+    options = {
+    TagID:"InText", ParentId:"Body", Placeholder:"Enter Text", Style:"color: #000000;"
+    }
+    AddInputTextBox(options)
+    ```
+
 
 
 
