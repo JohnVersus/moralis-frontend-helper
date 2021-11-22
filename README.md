@@ -11,6 +11,16 @@
 # UI Element Functions
 
 - [`addText`](#addText)
+  - **`Adds a UI text element to the page`**
+  - `The below code creates a text element in window with element id = Text, inside parent element of id = Body, with text value = Hello World!!, text color = #000000 .`
+ 
+    ```
+    options = {
+    TagID:"Text", ParentId:"Body", Text:"Hello World!!", Style:"color: #000000;"
+    }
+    addText({options})
+    ```
+
 - [`DeleteDiv`](#DeleteDiv)
 - [`DeleteContent`](#DeleteContent)
 - [`CreateTable`](#CreateTable)
@@ -25,6 +35,4 @@
 - [`AddInputTextBox`](#AddInputTextBox)
 
 
-- [`addText`](#addText)
 
-### `<AddressInput />`
