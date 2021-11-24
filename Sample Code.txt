@@ -1,0 +1,44 @@
+
+createRowDiv({TagID: "Row1" });
+
+AddLoginButton({ParentId: "Row1"}) 
+
+createRowDiv({TagID: "Row2" });
+
+AddInputTextBox({TagID:"S1", ParentId: "Row2"})
+
+addText({TagID: "PriceOut", ParentId: "Row2", Text:"Select Token to Get Price" })
+
+AddButton({ParentId: "Row2", ButtonName: "Get Price", TagID: "GetUSD", FunctionInput: "S1", FunctionOutput: "PriceOut", ButtonFunction: "TokenPrice" });
+
+
+createRowDiv({TagID: "Row3" });
+addTokenSelect({TagID:"S2", ParentId: "Row3"})
+
+addText({TagID: "PriceOut1", ParentId: "Row3", Text:"Select Token to Get Price" })
+
+AddButton({ParentId: "Row3", ButtonName: "Get Price", TagID: "GetUSD", FunctionInput: "S2", FunctionOutput: "PriceOut1", ButtonFunction: "TokenPrice" });
+
+
+createRowDiv({TagID: "Row4" });
+
+CreateTable({TagID:"TB1", ParentId: "Row4", ColumnNames: ["Address", "Balances"]})
+
+AddButton({TagID: "GetBalance", ParentId: "Row4", FunctionInput: "loggeduser", FunctionOutput: "TB1", ButtonFunction: "Balance" });
+
+
+createRowDiv({TagID: "Row5" });
+
+CreateTable({TagID:"TB2", ParentId: "Row5", ColumnNames: ["Chanin", "From Address", "To Address", "Value", "Transaction Date"]});
+
+AddButton({ ButtonName: "Transactions", ParentId: "Row5", TagID: "GetBalance", FunctionInput: "loggeduser", FunctionOutput: "TB2", ButtonFunction: "Transaction" });
+
+
+createRowDiv({TagID: "Row6" });
+AddInputTextBox({Parent:"Row6", TagID: "TxtIn1"})
+createColumnDiv({TagID: "Colm6", Style: "max-height: 300px; overflow: auto" });
+
+AddButton({ ButtonName: "NFT Search", ParentId: "Row5", TagID: "NFT Search", FunctionInput: "TxtIn1", FunctionOutput: "Colm6", ButtonFunction: "NFT" });
+
+
+AddButton({ ButtonName: "Fiat Buy", TagID: "BuyButton", ButtonFunction: "FiatBuy" });
