@@ -4,6 +4,19 @@
 > The main aim of this project is to make the the frontend development easy with **Moralis** for anyone with very basic knowledge of programming / NoCoders / LowCoders.
 
 ## Setup:
+Get access to the code using below line.
+```
+npm i moralis-frontend-helper
+```
+Copt the HTML from repository Index.html
+
+Copy the below script to your project script and add Moralis ServerUrl and AppID.
+```
+const serverUrl = "server-url";
+const appId = "app-id";
+Moralis.start({ serverUrl, appId });
+```
+
 
 ## With the help of moralis-frontend-helper:
 1. User will be able to inject working moralis functions directly into their web page.  
@@ -159,6 +172,15 @@
     ```
     DeleteContent("Text")
     ```
+
+## Functions to be added into moralis-frontend-helper:
+- [`FiatBuy()`](#FiatBuy)
+- [`CoinSwap()`](#CoinSwap)
+- [`PriceChart()`](#PriceChart)
+- [`IPFSUpload()`](#IPFSUpload)
+- [`NFTMint()`](#NFTMint)
+
+....and mony more
 
 
 
