@@ -55,7 +55,7 @@ Moralis.start({ serverUrl, appId });
     options = {
     TagID:"LoginBtn", ParentId:"Body", Style:"min-width: 50px; min-height: 15px; background-color: #65a47b;"
     }
-    AddLoginButton(options)
+    AddWCLoginButton(options)
     ```
 
 - [`AddButton()`](#AddButton)
