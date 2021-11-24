@@ -1,7 +1,7 @@
 # `moralis-frontend-helper`
 > Part of Moralis weekly challenge 
 
-> The main aim of this project is to make the the frontend development easy with **Moralis** for anyone with very basic knowledge of programming / NoCoders / LowCoders.
+> The main aim of this project is to make the frontend development easy with **Moralis** for anyone with very basic knowledge of programming / NoCoders / LowCoders.
 
 ## Setup:
 Get access to the code using below line.
